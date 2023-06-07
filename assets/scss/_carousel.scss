@@ -1,0 +1,43 @@
+.hero-carousel.carousel {
+  .carousel-indicators {
+    margin-bottom: -50px;
+    @extend .gap-5;
+    button{
+      border-radius: 50%;
+      border: 2px solid $purple;
+      width: 10px;
+      height: 10px;
+
+      &.active{
+        background-color: $purple;
+      }
+    }
+  }
+}
+
+.quote{
+  background-color: $purple;
+  @media (min-width: $bp-md) {
+    padding: {
+      left: calc(20%);
+    };
+  }
+  @media (max-width: $bp-md) {
+    text-align: center;
+    align-items: center;
+  }
+}
+.cardo{
+  font-family: 'Cardo', serif;
+  width: 100%;
+  max-width: 470px;
+}
+.grid-section-carousel {
+  gap: 0px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}

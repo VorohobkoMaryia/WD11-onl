@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;700;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+
+
+* {
+    font-family: $ff-base;
+}
+
+p {
+    font: {
+        weight: $fw-r;
+        size: 14px;
+    }
+    line-height: 16px;
+
+    @media (min-width: $bp-sm) {
+        font: {
+            size: 18px;
+        }
+        line-height: 21px;
+    }
+}
+
+h2 {
+    font: {
+        weight: $fw-r;
+        size: 24px;
+    }
+    line-height: 32px;
+    color: $black;
+    @media (min-width: $bp-sm) {
+        font: {
+            size: 36px;
+        }
+        line-height: 42px;
+    }
+}
+
+h3 {
+    font: {
+        weight: $fw-b;
+        size: 18px;
+    }
+    line-height: 21px;
+    color: $black;
+    @media (min-width: $bp-sm) {
+        font: {
+            size: 30px;
+        }
+        line-height: 35px;
+    }
+}
+
+h4 {
+    font: {
+        weight: $fw-xb;
+        size: 18px;
+    }
+    line-height: 21px;
+    color: $black;
+    text-transform: uppercase;
+    @media (min-width: $bp-sm) {
+        font: {
+            size: 24px;
+        }
+        line-height: 28px;
+    }
+}
+
+h5 {
+    font: {
+        weight: $fw-r;
+        size: 13px;
+    }
+    line-height: 15px;
+    color: $black;
+    @media (min-width: $bp-sm) {
+        font: {
+            size: 18px;
+        }
+        line-height: 21px;
+    }
+}
+
+h6{
+    font: {
+        weight: $fw-b;
+        size: 12px;
+    }
+    line-height: 14px;
+    color: $white;
+    @media (min-width: $bp-sm) {
+        font: {
+            size: 13px;
+        }
+        line-height: 15px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.white-text {
+    color: $white;
+}
+
+.transform {
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-capitalize {
+        text-transform: capitalize;
+    }
+}
+
+.text-bold {
+    font: {
+        weight: $fw-b;
+    }
+}
+
+.text-r {
+    font: {
+        weight: $fw-r;
+    }
+}

@@ -1,0 +1,107 @@
+
+.d-grid {
+  display: grid;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.grid-section {
+  gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.grid-section-inner {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.grid-section-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100%;
+  cursor: pointer;
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.grid-section-item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  height: 0;
+  transition: height .5s;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(transparentize($primary,0.2), transparentize($primary,0.2));
+}
+
+.grid-section-item:hover,
+.grid-section-item:active {
+  background-size: 190%;
+}
+
+.grid-section-item:hover [class*="inner"] {
+  opacity: 1;
+}
+.grid-section-item:hover:before {
+  height: 100%;
+}
+
+.grid-section-item:active [class*="inner"] {
+  opacity: 1;
+}
+.grid-section-item:active:before {
+  /*   background-color: blue; */
+  background-image: linear-gradient(transparentize($blackred,0.2), transparentize($blackred,0.2));
+  height: 100%;
+}
+
+.grid-section-item:first-child {
+  background-image: url("../images/work_1.png");
+}
+
+.grid-section-item:nth-child(2) {
+  background-image: url("../images/work_2.png");
+}
+
+.grid-section-item:nth-child(3) {
+  background-image: url("../images/work_3.png");
+}
+
+.grid-section-item:nth-child(4) {
+  background-image: url("../images/work_4.png");
+}
+
+.grid-section-item:nth-child(5) {
+  background-image: url("../images/work_5.png");
+}
+
+.grid-section-item:nth-child(6) {
+  background-image: url("../images/work_6.png");
+}
+
+.grid-section-item:nth-child(7) {
+  background-image: url("../images/work_7.png");
+}
+
+.grid-section-item:last-child {
+  background-image: url("../images/work_8.png");
+}

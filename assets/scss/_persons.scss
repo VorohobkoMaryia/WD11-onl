@@ -1,0 +1,47 @@
+.persons {
+    color: $middlegrey;
+    &-name {
+        font: {
+            weight: $fw-b;
+            size: 18px;
+        }
+        line-height: 28px;
+        color: $darkgrey;
+        @extend .mt-4
+    }
+    &-profession {
+        color: $red;
+        text-transform: uppercase;
+    }
+}
+
+[class*="person_"] {
+    width: 100%;
+    height: 300px;
+    background: {
+        position: center;
+        size: contain;
+        repeat: no-repeat;
+    }
+}
+
+.person_1 {
+    background: {
+        image: url("../images/person_1.png");
+    }
+}
+.person_2 {
+    background: {
+        image: url("../images/person_2.png");
+    }
+}
+.person_3 {
+    background: {
+        image: url("../images/person_3.png");
+    }
+}
+.person_4 {
+    background: {
+        image: url("../images/person_4.png");
+    }
+}

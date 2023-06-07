@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    .footer-container{
+        min-height: 230px;
+        @media (min-width: $bp-md){
+            height: 300px;
+        }
+        background-color: $lightblue;
+    }
+    .author {
+        background-color: $darkblue;
+        height: 90px;
+        &-item {
+            max-width: 370px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import "_variables";
+@import "_mixins";
+@import "_grid";
+@import "_typography";
+@import "_helpers";
+@import "_helpers";
+@import "_socials";
+@import "_buttons";
+@import "_header";
+@import "_hero";
+@import "_pictures";
+@import "_features";
+@import "_carousel";
+@import "_persons";
+@import "_footer";
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    @include flexify($dir: column);
+}
+
+main {
+    flex-grow: 1;
+    overflow: auto;
+    max-height: 100%;
+}

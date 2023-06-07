@@ -1,0 +1,23 @@
+.hero {
+    height: 100%;
+    color: $white;
+    background: {
+        image: linear-gradient(transparentize($blue, 0.2), transparentize($blue, 0.2)), url("../images/background.png");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+    font-size: 18px;
+    text-align: center;
+    @media screen {
+    }
+
+    &-title {
+        font: {
+            size: 48px;
+            weight: $fw-xb;
+        }
+        text-transform: uppercase;
+    }
+    @include flexify($align: center);
+}

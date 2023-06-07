@@ -1,0 +1,50 @@
+.btn {
+    @include flexify($align: center, $justify: center);
+    border: 0;
+    cursor: pointer;
+
+    &-primary {
+        width: 100%;
+        max-width: 278px;
+        height: 80px;
+        background-color: $primary;
+        color: $white;
+        text-transform: uppercase;
+        border-radius: 0px;
+        font: {
+            weight: $fw-xb;
+            size: 24px;
+        }
+        @include flexify($align: center, $justify: center);
+        @media (min-width: $bp-sm) {
+            max-width: 314px;
+        }
+    }
+
+    &-primary:hover {
+        background-color: $darkred;
+    }
+
+    &-primary:active {
+        box-shadow: 4px 4px 30px $primary;
+        background-color: $primary !important;
+    }
+
+    &-bar {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        padding: 10px 5px;
+        align-self: center;
+        @include flexify($dir: column, $justify: space-between);
+        &:before,
+        &:after,
+        &-item {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: $white;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+header {
+    background-color: $blue;
+    height: 100%;
+    max-height: 100px !important;
+    @include flexify();
+    border-bottom: 1px solid $white;
+}
+
+.logo {
+    width: 100%;
+    max-width: 180px;
+    background: {
+        image: url("../icons/logo.svg");
+        position: center;
+        size: contain;
+        repeat: no-repeat;
+    }
+}
+
+.navigation {
+    @include flexify();
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+        padding: 0 20px;
+        @include flexify($align: center);
+    }
+
+    &-link {
+        text: {
+            transform: uppercase;
+        }
+        color: $white;
+        font: {
+            weight: $fw-b;
+            size: 13px;
+        }
+    }
+    &-link:hover {
+        border-bottom: 2px solid $white;
+    }
+    &-link:active {
+        color: $darkred;
+        border-bottom: 2px solid $darkred;
+    }
+}

@@ -1,0 +1,41 @@
+.facebook{
+  background: {
+    image: url("../icons/facebook.svg");
+    position: center;
+    size: contain;
+    repeat: no-repeat;
+  };
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.twitter {
+  background: {
+    image: url("../icons/twitter.svg");
+    position: center;
+    size: contain;
+    repeat: no-repeat;
+  };
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.linkedin{
+  background: {
+    image: url("../icons/linkedin.svg");
+    position: center;
+    size: contain;
+    repeat: no-repeat;
+  };
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.socials{
+  display: flex;
+  @media (min-width: $bp-sm) {
+    margin-bottom: 10px;
+  }
+}

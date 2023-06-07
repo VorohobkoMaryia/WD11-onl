@@ -1,0 +1,52 @@
+.features {
+    &-item {
+        text-align: center;
+    }
+    color: $middlegrey;
+}
+
+[class*="feature_"] {
+    width: 100%;
+    height: 100px;
+    background: {
+        position: center;
+        size: contain;
+        repeat: no-repeat;
+    }
+}
+
+.feature_1 {
+    background: {
+        image: url("../icons/customised.svg");
+    }
+}
+
+.feature_2 {
+    background: {
+        image: url("../icons/ready.svg");
+    }
+}
+
+.feature_3 {
+    background: {
+        image: url("../icons/design.svg");
+    }
+}
+
+.feature_4 {
+    background: {
+        image: url("../icons/clean_code.svg");
+    }
+}
+
+.feature_5 {
+    background: {
+        image: url("../icons/ready.svg");
+    }
+}
+
+.feature_6 {
+    background: {
+        image: url("../icons/download.svg");
+    }
+}

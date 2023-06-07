@@ -1,0 +1,73 @@
+.flex {
+    @include flexify($wrap: wrap);
+
+    &-column {
+        @include flexify($dir: column);
+    }
+}
+
+.justify-content {
+    &-between {
+        @include flexify($justify: space-between);
+    }
+    &-space-evenly {
+        @include flexify($justify: space-evenly);
+    }
+    &-center {
+        @include flexify($justify: center);
+    }
+}
+
+.align-items {
+    &-center {
+        @include flexify($align: center);
+    }
+}
+
+.text-align{
+    &-center{
+        text-align: center;
+    }
+}
+
+.hidden {
+    display: none !important;
+    &-xs {
+        @media (max-width:calc(#{$bp-xs} - 1px)) {
+            display: none !important;
+        }
+    }
+    &-sm {
+        @media (min-width:$bp-xs) and (max-width:calc(#{$bp-sm} - 1px)) {
+            display: none !important;
+        }
+    }
+    &-md {
+        @media (min-width:$bp-sm) and (max-width:calc(#{$bp-md} - 1px)) {
+            display: none !important;
+        }
+    }
+    &-lg {
+        @media (min-width:$bp-md) and (max-width:calc(#{$bp-lg} - 1px)) {
+            display: none !important;
+        }
+    }
+
+    &-xl {
+        @media (min-width: $bp-lg) {
+            display: none !important;
+        }
+    }
+}
+
+@for $i from 0 to 51 {
+    .gap-#{$i} {
+        gap: calc(#{$i}px * 5);
+    }
+    .mb-#{$i} {
+        margin-bottom: calc(#{$i}px * 5);
+    }
+    .mt-#{$i} {
+        margin-top: calc(#{$i}px * 5);
+    }
+}
